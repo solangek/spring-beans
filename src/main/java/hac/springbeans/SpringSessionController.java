@@ -51,8 +51,8 @@ public class SpringSessionController {
 
     @GetMapping("/")
     public String process(Model model) {
+        // this code belongs to Spring MVC with VIEW ENGINE (thymeleaf)
         model.addAttribute("sessionMessages", sessionMessages.getMessages());
-
         model.addAttribute("mylabel", label);
         model.addAttribute("singletonLabel", singletonLabel);
         model.addAttribute("applicationLabel", applicationLabel);
