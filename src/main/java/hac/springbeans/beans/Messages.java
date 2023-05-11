@@ -1,10 +1,7 @@
-package com.example.demo.beans;
+package hac.springbeans.beans;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.annotation.SessionScope;
 
 import java.io.Serializable;
@@ -32,12 +29,4 @@ public class Messages implements Serializable {
         messages.add(m);
     }
 
-    /* BEAN using ctor - session scope */
-    @Bean
-    @SessionScope
-    public Messages sessionBeanExample () {
-        Messages m = new Messages();
-        m.add("I'm session bean Messages");
-        return m;
-    }
 }

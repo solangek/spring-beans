@@ -1,4 +1,4 @@
-package com.example.demo.beans;
+package hac.springbeans.beans;
 
 import org.springframework.stereotype.Component;
 
@@ -13,4 +13,5 @@ public class Label {
     public void setLabel(String l) {
         label = l;
     }
+
 }
