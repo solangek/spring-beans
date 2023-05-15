@@ -1,5 +1,6 @@
 package hac.springbeans.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
@@ -11,21 +12,21 @@ import java.util.ArrayList;
 
 @Component
 public class Messages implements Serializable {
-    private ArrayList<String> messages;
+    private ArrayList<Label> messages;
 
     public Messages() {
         this.messages = new ArrayList<>();
     }
 
-    public ArrayList<String>  getMessages() {
+    public ArrayList<Label>  getMessages() {
         return messages;
     }
 
-    public void setMessages(ArrayList<String>  messages) {
+    public void setMessages(ArrayList<Label>  messages) {
         this.messages = messages;
     }
 
-    public void add (String m) {
+    public void add (Label m) {
         messages.add(m);
     }
 

@@ -7,6 +7,10 @@ public class Label {
     private String label = "Arbitrary Label";
     public Label() {
     }
+
+    public Label(String l) {
+        label = l;
+    }
     public String toString() {
         return label;
     }

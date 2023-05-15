@@ -81,7 +81,7 @@ public class SpringSessionController {
     @PostMapping("/persistMessage")
     public String persistMessage(@RequestParam("msg") String msg) {
 
-        sessionMessages.add(msg);
+        sessionMessages.add(new Label(msg));
         return "redirect:/";
     }
 

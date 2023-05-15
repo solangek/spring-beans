@@ -60,7 +60,7 @@ public class BeanConfiguration {
     @SessionScope
     public Messages sessionBeanExample () {
         Messages m = new Messages();
-        m.add("I'm session bean Messages");
+        m.add(new Label("I'm session bean Messages"));
         return m;
     }
 }
