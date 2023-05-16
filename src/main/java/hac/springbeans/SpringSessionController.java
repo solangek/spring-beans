@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import jakarta.servlet.http.HttpServletRequest;
 
+/** note: this IS NOT A REST CONTROLLER : methods return a view name
+  and not a JSON object!
+ if you want to see an example of REST controller check
+https://github.com/solangek/spring-rest-form
+ */
 @Controller
 public class SpringSessionController {
 
