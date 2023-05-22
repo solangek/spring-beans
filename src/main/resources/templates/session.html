@@ -19,7 +19,7 @@
     <h2>Application bean</h2>
     <p>The bean label is: <span th:text="${applicationLabel}"></span></p>
     <h2>Session bean</h2>
-    <p>If you look into your database, you will notice that spring creates automatically 2 tables to store sessions and session data.</p>
+    <p>Session data is stored in memory, therefore it will be reset for every run.</p>
 <div>
     <form th:action="@{/persistMessage}" method="post">
         <textarea name="msg" cols="40" rows="2"></textarea>
